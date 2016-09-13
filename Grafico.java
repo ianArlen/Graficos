@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 
-public class grafico extends JFrame{
+public class Grafico extends JFrame{
     private JPanel contentPane;
     private JTextField textfiel1,textfiel2,textfiel3;
     private boolean ban=false;
@@ -20,7 +20,7 @@ public class grafico extends JFrame{
 	EventQueue.invokeLater(new Runnable() {
 	    public void run(){
 	    try{
-		grafico frame = new grafico();
+		Grafico frame = new Grafico();
 		frame.setVisible(true);
 	         }catch(Exception e){
 		 e.printStackTrace();
@@ -29,7 +29,7 @@ public class grafico extends JFrame{
 	    
 	});
     }
-    public grafico(){
+    public Grafico(){
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100,100,800,600);
     contentPane = new JPanel();
@@ -39,7 +39,7 @@ public class grafico extends JFrame{
     
     JLabel lblCarrera = new JLabel("ISC:");
    lblCarrera.setBounds(46,39,61,14);
-    contentPane.add(lblCarrera);
+    //contentPane.add(lblCarrera);
     
     JLabel lblCarrera2 = new JLabel("IGE:");
     lblCarrera2.setBounds(46,69,61,14);
@@ -48,9 +48,22 @@ public class grafico extends JFrame{
     JLabel lblCarrera3 = new JLabel("IND:");
    lblCarrera3.setBounds(46,103,61,14);
     contentPane.add(lblCarrera3);
+
+    JLabel lblCarrera4 = new JLabel("Hola");
+   lblCarrera4.setBounds(46,103,61,14);
+    contentPane.add(lblCarrera3);
+
+    JLabel lblCarrera5 = new JLabel(":)");
+   lblCarrera5.setBounds(46,103,61,14);
+    contentPane.add(lblCarrera3);
+
+    JLabel lblCarrera6 = new JLabel("D;");
+   lblCarrera6.setBounds(46,103,61,14);
+    contentPane.add(lblCarrera3);
     
     textfiel1 = new JTextField();
     textfiel1.setBounds(117,36,86,20);
+    String texto = textfiel1.getText();
     contentPane.add(textfiel1);
     textfiel1.setColumns(15);
     
